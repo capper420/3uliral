@@ -13,6 +13,7 @@ function Start(){
 }
 function Save(){
     let newname = document.getElementById('newname').value;
+    
     names.push(newname)
                 Start()
             }

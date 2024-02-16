@@ -16,6 +16,9 @@
     height: 85%;
     border-radius: 5%;
     background-color: aliceblue;
+    display:flex;
+    justify-content:space-around;
+    flex-direction: column-reverse;
     
 }
 .card1{
@@ -23,4 +26,38 @@
     height: 85%;
     border-radius: 5%;
     background-color: antiquewhite;
+    display:flex;
+    justify-content:space-around;
+    flex-direction: column-reverse;
+}
+.ez1{
+    width: 90%;
+    height:20%;
+    display:flex;
+    justify-content: center; 
+    align-items: center;
+    flex-direction: column-reverse;
+}
+.ez2{
+    width: 90%;
+    height:20%;
+    display:flex;
+    justify-content: center; 
+    align-items: center;
+    flex-direction: column-reverse;
+}
+.ez3{
+    width: 90%;
+    height:20%;
+    display:flex;
+    justify-content: center; 
+    align-items: center;
+    flex-direction: column-reverse;
+}
+.idk{
+    width:90%;
+    height: 20%;
+    display:flex ;
+    justify-content: center;
+    align-items: center;
 }
