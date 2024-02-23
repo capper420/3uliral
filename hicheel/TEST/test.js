@@ -9,7 +9,7 @@ function Start(){
     for(let i = 0; i < names.length ; i++){
         box += "USER: " + names[i] + '<br>' ;
     }
-    document.getElementById('list').innerHTML = box;
+    document.getElementById('box1').innerHTML = box;
 }
 
 

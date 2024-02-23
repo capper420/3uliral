@@ -1,7 +1,5 @@
-const names=['Deeznuts','The goat','hujaa','GYAT'] 
+const number=['1','2','3','G4'] 
 window.onload = Start();
-
-
 function Start(){
     let box=''
     document.getElementById('list').innerHTML = "Hello";            
@@ -12,8 +10,8 @@ function Start(){
     document.getElementById('list').innerHTML = box;
 }
 function Save(){
-    let newname = document.getElementById('newname').value;
+    let newnumber = document.getElementById('newname').value;
     
-    names.push(newname)
+    names.push(newnumber)
                 Start()
             }
