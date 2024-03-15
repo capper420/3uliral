@@ -3,15 +3,16 @@
     padding: 0;
 }
 .container1{
-    height:100vh;
+    height:85vh;
     width: 100%;
     background-color:aliceblue;
     display: flex;
     justify-content: center;
     align-items: center;
-
+    justify-content: space-between;
     flex-direction: column-reverse;
 }
+
 .card1{
     height:10%;
     width: 60%;
@@ -32,6 +33,7 @@
     background-color: aliceblue;
     display: flex;
     border-radius: 5%;
+    justify-content: space-between;
 }
 
 .box1{
@@ -43,7 +45,7 @@
 }
 .box2{
     height: 100%;
-    width: 60%;
+    width: 55%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -72,4 +74,62 @@
     align-items: center;
     justify-content: center;
     
+}
+.sav1{
+    height: 100%;
+    width: 25%;
+}
+.sav2{
+    height: 100%;
+    width: 25%;
+}
+.sav3{
+    height: 100%;
+    width: 25%;
+}
+.container2{
+    height:85vh;
+    width: 100%;
+    background-color:white;
+    display: flex;
+    
+    align-items: center;
+    
+    flex-direction: column;
+}
+.cube1{
+    height: 5%;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+}
+.cube2{
+    height: 30%;
+    width:60%;
+    display: flex;
+    justify-content: space-between;
+}
+.a{
+    width: 15%;
+    height: 100%;
+}
+.b{
+    width: 15%;
+    height: 100%;
+}
+.c{
+    width: 15%;
+    height: 100%;
+}
+.d{
+    width: 15%;
+    height: 100%;
+}
+.e{
+    width: 15%;
+    height: 100%;
+}
+.f{
+    width: 15%;
+    height: 100%;
 }
