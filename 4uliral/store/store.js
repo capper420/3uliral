@@ -8,5 +8,6 @@ function Start(){
     document.getElementById('card1').innerHTML = chat;
 }
 function Addtocard(){
-    alert('HEllo')
+    alert('Hudaldan avalt hiilee')
+    Start()
 }
