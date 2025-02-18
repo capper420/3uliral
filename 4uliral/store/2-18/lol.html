@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    body{
+        font-family:Arial, Helvetica, sans-serif;
+    }
+    .container{
+        display:flex;
+       /* flex-direction: column;*/
+       flex-wrap:wrap;
+    }
+    .item{
+        background-color: antiquewhite;
+        border:brown solid 1px;
+        padding:1rem;
+        text-align:center;
+        flex:1;
+        margin:0.5rem;
+    }
+    .item-max{
+        flex:2;
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item-max">e5</div>
+        <div class="item">e1</div>
+        <div class="item">e2</div>
+        <div class="item">e3</div>
+        <div class="item">e4</div>
+        <div class="item">e6</div>
+        <div class="item">e7</div>
+        <div class="item">e8</div>
+        <div class="item">e9</div>
+        <div class="item item-max">e10</div>
+    </div>
+</body>
+</html>
