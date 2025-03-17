@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        html, body {
+            height: 100%;
+        }
+        .container {
+            width: 100%;
+            height: 100%;
+            background-image: url("https://www.whiteclouds.com/wp-content/uploads/elementor/thumbs/Denali-Mountains-qxmzgry6tdrgw1tc435ei3j76i2o7ona19c6621oao.webp");
+            display: grid;
+            grid-template-rows: 25% 25% 25% 25%;
+            grid-template-columns: 25% 25% 25% 25%;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        .item1, .item2, .item3, .item4, .item5 {
+            border: 1px solid black; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2px;
+        }
+        .item1 {
+            grid-column-start: 1;
+            grid-column-end: 5;
+            flex-direction: column;
+        }
+        .item2 {
+            grid-area: 2/1/4/2;
+            flex-direction: column;
+        }
+        .item3 {
+            grid-area: 2/2/4/4;
+            padding: 5px;
+            flex-direction: column;
+        }
+        .item4 {
+            grid-area: 2/4/4/4;
+            flex-direction: column;
+        }
+        .item5 {
+            grid-area: 4/1/span 4/span 4;
+            flex-direction: row; 
+            display: flex;
+            justify-content: space-around;
+            gap: 10px; 
+        }
+        h1 {
+            font-size: 50px;
+        }
+        p {
+            font-size: 25px;
+        }
+        .img1 {
+            height: 150px;
+            width: 142px;
+            display: flex;
+            border-radius: 1%;
+            position: relative; 
+        }
+        .image-container {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .hover-text {
+            position: absolute;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 10px;
+            font-size: 18px;
+            display: none; 
+            border-radius: 5px;
+            text-align: center;
+            max-width: 90%;
+            line-height: 1.4;
+        }
+        .image-container:hover .hover-text {
+            display: block;
+        }
+        
+        .item5 .img1 {
+            width: 45%; 
+            height: auto; 
+        }
+        #i6{
+            height: 150px;
+            width: 142px;
+        }
+        #i5{
+            height: 150px;
+            width: 142px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item1">
+            <h1>Mountains</h1>
+        </div>
+        <div class="item2">
+            <div class="image-container">
+                <img class="img1" id="i1" src="https://cdn.britannica.com/17/83817-050-67C814CD/Mount-Everest.jpg" alt="">
+                <span class="hover-text">Mount Everest<br>Height: 8,848 m<br>Location: Nepal/China<br>World's highest peak, first climbed in 1953.</span>
+            </div>
+            <div class="image-container">
+                <img class="img1" id="i2" src="https://t3.gstatic.com/licensed-image?q=tbn:ANd9GcSfi-O-cpg1GIy1RlZU9hxTci-0Stp3Hd6oGx2WO19GZlbksvp5uZu-rmB-sz3Z44vq" alt="">
+                <span class="hover-text">K2 (Mount Godwin-Austen)<br>Height: 8,611 m<br>Location: Pakistan/China<br>Second-highest peak, known for its climbing difficulty.</span>
+            </div>
+        </div>
+        <div class="item3">
+            <h1>Facts</h1>
+            <p>Mountains are nature’s giants, towering over landscapes with peaks that touch the sky. They’ve inspired awe and adventure for centuries.</p>
+            <br>
+            <p>The tallest mountain, Mount Everest, stands at 8,848 meters. It’s a challenge climbers dream of conquering.</p>
+            <br>
+            <p>Mountains shape the world around them, creating valleys, rivers, and unique ecosystems. From the Rockies to the Alps, they’re full of life and mystery.</p>
+            <br>
+            <p>Did you know? Some mountains, like volcanoes, are still active, shaping the earth with fire and lava even today.</p>
+            <br>
+            <p>Whether for hiking, skiing, or simply gazing at their beauty, mountains call to us all. They’re a reminder of nature’s power and peace.</p>
+        </div>
+        <div class="item4">
+
+            <div class="image-container">
+                <img class="img1" id="i3" src="https://t1.gstatic.com/licensed-image?q=tbn:ANd9GcSbiZoGSnUrasX-pQe9XABrZkM4zKiwEDdrd9Fo553bvK22kIhXBk-p8FQWBWx1qAUM" alt="">
+                <span class="hover-text">Denali<br>Height: 6,190 m<br>Location: Alaska, USA<br>Highest peak in North America, known for its wild beauty.</span>
+            </div>
+            <div class="image-container">
+                <img class="img1" id="i4" src="https://t3.gstatic.com/licensed-image?q=tbn:ANd9GcSk6u25gjg48gpLKlCPp6Q9d9vfcz2VSGKi80MjwHWYgpz8YiR6od_Z9IzYp90fHvuA" alt="">
+                <span class="hover-text">Mount Kilimanjaro<br>Height: 5,895 m<br>Location: Tanzania<br>Africa's highest peak, a dormant volcano.</span>
+            </div>
+        </div>
+        <div class="item5">
+            <div class="image-container">
+                <img class="img1" id="i5" src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQxlLEKTOwcYwHtfqPkEMxLh-3OTgN3fsjFYJRfDHFg3Xf4t2bY" alt="">
+                <span class="hover-text">Otgontenger<br>Height: 4,008 m<br>Location: Mongolia<br>Highest peak in the Khangai Range.</span>
+            </div>
+            <h1>Mongolian mountain</h1>
+            <div class="image-container">
+                
+                <img class="img1" id="i6" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Tsambagarav_Mountain.JPG/640px-Tsambagarav_Mountain.JPG" alt="">
+                
+                <span class="hover-text">Tsambagarav<br>Height: 4,193 m<br>Location: Mongolia<br>A sacred peak in the Altai range.</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
