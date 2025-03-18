@@ -14,10 +14,10 @@
         }
         .container {
             width: 100%;
-            height: 100%;
-            background-image: url("https://www.whiteclouds.com/wp-content/uploads/elementor/thumbs/Denali-Mountains-qxmzgry6tdrgw1tc435ei3j76i2o7ona19c6621oao.webp");
+            height: 2000px;
+            
             display: grid;
-            grid-template-rows: 25% 25% 25% 25%;
+            grid-template-rows: 15% 35% 35% 15%;
             grid-template-columns: 25% 25% 25% 25%;
             background-size: cover;
             background-repeat: no-repeat;
@@ -32,6 +32,7 @@
             justify-content: center;
             align-items: center;
             gap: 2px;
+            background-color: antiquewhite;
         }
         .item1 {
             grid-column-start: 1;
@@ -41,15 +42,21 @@
         .item2 {
             grid-area: 2/1/4/2;
             flex-direction: column;
+            display: flex;
+            justify-content: start;
         }
         .item3 {
             grid-area: 2/2/4/4;
             padding: 5px;
             flex-direction: column;
+            display: flex;
+            justify-content: start;
         }
         .item4 {
             grid-area: 2/4/4/4;
             flex-direction: column;
+            display: flex;
+            justify-content: start;
         }
         .item5 {
             grid-area: 4/1/span 4/span 4;
@@ -105,21 +112,55 @@
             height: 150px;
             width: 142px;
         }
+        .menu{
+            height:50px;
+        }
+        @media screen and (min-width:700px ) and (max-width: 800px) {
+            .item3{
+            width:100%;
+            grid-area: span 2/ span 3;
+        }
+            .item2 {
+            display: none;
+        }
+        .item3{
+            width:100%;
+        }
+        
+  }
+  @media screen and (max-width: 699px) {
+             .item2,  .item4 {
+            display: none;
+        }
+        .item3{
+            width:100%;
+            grid-area: span 2/ span 4;
+        }
+        img{
+            display: none;
+        }
+        
+  }
     </style>
 </head>
 <body>
+    <div class="menu">
+        <div class="home"></div>
+        <div class="docs"></div>
+        <div class="about"></div>
+    </div>
     <div class="container">
         <div class="item1">
             <h1>Mountains</h1>
         </div>
         <div class="item2">
             <div class="image-container">
-                <img class="img1" id="i1" src="https://cdn.britannica.com/17/83817-050-67C814CD/Mount-Everest.jpg" alt="">
-                <span class="hover-text">Mount Everest<br>Height: 8,848 m<br>Location: Nepal/China<br>World's highest peak, first climbed in 1953.</span>
+                <img class="img1" id="i1" src="https://i.pinimg.com/736x/1f/e9/ca/1fe9cae4006d1342ea9b9a62671d9377.jpg" alt="">
+                <span class="hover-text">Chinbayar<br>Grade:9A.</span>
             </div>
             <div class="image-container">
-                <img class="img1" id="i2" src="https://t3.gstatic.com/licensed-image?q=tbn:ANd9GcSfi-O-cpg1GIy1RlZU9hxTci-0Stp3Hd6oGx2WO19GZlbksvp5uZu-rmB-sz3Z44vq" alt="">
-                <span class="hover-text">K2 (Mount Godwin-Austen)<br>Height: 8,611 m<br>Location: Pakistan/China<br>Second-highest peak, known for its climbing difficulty.</span>
+                <img class="img1" id="i2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNoxHT0BzVfLSMTRTB4OHrw4OCHYCmnMZjPg&s" alt="">
+                <span class="hover-text">Namuundari<br>Grade:9A.</span>
             </div>
         </div>
         <div class="item3">
@@ -137,8 +178,8 @@
         <div class="item4">
 
             <div class="image-container">
-                <img class="img1" id="i3" src="https://t1.gstatic.com/licensed-image?q=tbn:ANd9GcSbiZoGSnUrasX-pQe9XABrZkM4zKiwEDdrd9Fo553bvK22kIhXBk-p8FQWBWx1qAUM" alt="">
-                <span class="hover-text">Denali<br>Height: 6,190 m<br>Location: Alaska, USA<br>Highest peak in North America, known for its wild beauty.</span>
+                <img class="img1" id="i3" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjflqIkUIjr5llyLIOZm34XdPvp8w4mIc-7A&s" alt="">
+                <span class="hover-text">Tselmeg<br>Grade:9A.</span>
             </div>
             <div class="image-container">
                 <img class="img1" id="i4" src="https://t3.gstatic.com/licensed-image?q=tbn:ANd9GcSk6u25gjg48gpLKlCPp6Q9d9vfcz2VSGKi80MjwHWYgpz8YiR6od_Z9IzYp90fHvuA" alt="">
