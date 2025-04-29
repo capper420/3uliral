@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Xolboo бapиx</title>
+  <!-- font Awesome CDN link -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+  />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="about.css" />
+  <link rel="stylesheet" href="contact.css" />
+  <!-- JQuery CDN link -->
+  <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+30JU5yExlq6GSYGSHk7PXikynS7ogEvDej/m4="
+    crossorigin="anonymous"
+  ></script>
+</head>
+<body>
+
+<!-- Navigation start -->
+<nav>
+  <img src="img/favicon.ico" class="logo" alt="Logo" />
+  <p>NEST Education IT school</p>
+  <div class="navigation">
+    <ul>
+      <i id="menu-close" class="fas fa-times"></i>
+      <li><a href="index.html">Hyyp Xyyдac</a></li>
+      <li><a href="about.html">6дний тужай</a></li>
+      <li><a href="courses.html">бутззлийн танилшуулга</a></li>
+      <li><a href="contact.html" class="active">Xолбoo бариx</a></li>
+    </ul>
+    <img src="img/menu.png" id="menu-btn" alt="Menu" />
+  </div>
+</nav>
+
+<section id="contact">
+  <div class="getin">
+    <h2>Холбоо барих</h2>
+    <p>• Тусламж хэрэгтэй байна уу? Холбоо барих хэсгийг бөглөж, бидэнтэй холбогдоорой.</p>
+    <div class="getin-details">
+      <h3>XaЯr</h3>
+      <div>
+        <i class="fa-solid fa-map get"></i>
+        <p>Улаанбаатар Сүхбаатар дүүрэг 8-р хороо</p>
+      </div>
+      <h3>Yτac</h3>
+      <div>
+        <i class="fa fa-phone-alt get"></i>
+        <p>
+          77995555 <br />
+          77994444
+        </p>
+      </div>
+      <h3>Support</h3>
+      <div>
+        <i class="fa-solid fa-envelope get"></i>
+        <p>
+          nhs.edu.mn <br />
+          info@nest.edu.mn
+        </p>
+      </div>
+      <h3>Биднийг дагаарай</h3>
+      <div class="pro-links">
+        <i class="fa fa-facebook"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fa fa-linkedin-in"></i>
+        <i class="fab fa-behance"></i>
+      </div>
+    </div>
+  </div>
+  <div class="form">
+    <h4>Холбоо барих</h4>
+    <div class="form-row">
+      <input type="text" placeholder="Hǝp" />
+      <input type="email" placeholder="eмaйл" />
+    </div>
+    <div class="form-col">
+      <input type="text" placeholder="" />
+    </div>
+    <div class="form-col">
+      <textarea name="" id="" cols="30" rows="8" placeholder="Таньд юугаар туслах вэ?"></textarea>
+    </div>
+    <div class="form-col">
+      <button>Wлrǝx</button>
+    </div>
+  </div>
+</section>
+
+<section id="map">
+  <iframe
+    src="https://www.google.com/maps/place/WWCH%2BC6C,+%D0%A1%D0%91%D0%94+-+8+%D1%85%D0%BE%D1%80%D0%BE%D0%BE,+%D0%A3%D0%BB%D0%B0%D0%B0%D0%BD%D0%B1%D0%B0%D0%B0%D1%82%D0%B0%D1%80+14191/@47.9209732,106.9279461,21z/data=!4m6!3m5!1s0x5d96923f77cf2227:0x37a8afe414571aa4!8m2!3d47.9210598!4d106.9280076!16s%2Fg%2F11_slqm1j?entry=ttu&g_ep=EgoyMDI1MDQyMy4wIKXMDSoJLDEwMjExNDUzSAFQAw%3D%3D"
+    frameborder="0"
+    allowfullscreen=""
+    referrerpolicy="no-referrer-when-downgrade"
+    loading="lazy"
+  ></iframe>
+</section>
+
+<script>
+  // Show menu links on burger click
+  $("#menu-btn").click(function () {
+    $("nav .navigation ul").addClass("active");
+  });
+
+  // Hide navbar on click function
+  $("#menu-close").click(function () {
+    $("nav .navigation ul").removeClass("active");
+  });
+</script>
+</body>
+</html>
